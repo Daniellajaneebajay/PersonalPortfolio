@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Copperplate", Papyrus, fantasy;
+    text-decoration: none;
+    list-style: none;
+}
+#header{
+    height: 100px;
+    width: 200%;
+    padding: 35px 12%;
+    background: rgb(120, 120, 120);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
+    transform: scale(1.1);
+}
+span{
+    color: orangered;
+    font-weight: bold;
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin: 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease; 
+}
+.navbar a:hover{
+    color: orangered;
+    text-shadow: 0 0 25px orangered,
+                 0 0 50px orangered;
+    transform: scale(1.1);
+    border-bottom: 3px solid orangered; 
+}
+#home{
+    color: white;
+    background-color: gray;
+    display: flex;
+    gap: 10em;
+    align-items: center;
+    padding: 30px 12% 0;
+    height: 800px;
+    width: 200%;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 75px;
+}
+.home-content h1{
+    font-size: 74px;
+    line-height: 1.1;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.social-icon a{
+    margin: 0 10px;
+}
+.social-icon img{
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s;
+}
+.social-icon img:hover{
+    transform: scale(1.1);
+}
+.home-img img{
+    position: relative;
+    height: auto;
+    width: 200px;
+    border-radius: 50%;
+}
+#about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    color: white;
+    background-color: gray;
+    width: 200%;
+    height: 1000px;
+}
+.about-content{
+    max-width: 800px;
+}
+.about-content h1{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-content p{
+    font-size: 32px;
+}
+.video-container{
+    flex: 0 0 20%;
+    margin-right: 20px;
+}
+.video-container video{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#education{
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10em;
+    color: white;
+    background-color: gray;
+    width: 200%;
+    height: 750px;
+}
+.education-content{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.heading{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.education-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.education-img{
+    flex: 0 0 150px; /* Image width */
+    margin-right: 100px;
+    overflow: hidden;
+    border-radius: 50%; /* Rounded shape for the image */
+    position: relative;
+}
+.education-img img{
+    width: 100%;
+    height: auto;
+    border: 4px solid gray; /* White border around the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+.education-img:hover img{
+    transform: scale(1.0); /* Enlarge image on hover */
+}
+.shake:hover{
+    animation: shake 0.5s ease-in-out infinite;
+}
+@keyframes shake{
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+.details{
+    text-align: left;
+}
+.details h2{
+    color: white;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+.details p{
+    color: white;
+    font-size: 32px;
+    margin-bottom: 0;
+}
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    color: white;
+    background-color: gray;
+    width: 200%;
+    height: 800px;
+}
+#skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    color: white;
+    background-color: gray;
+    width: 200%;
+    height: 1000px;
+}
+.skills-content{
+    margin: 20px 0;
+    padding: 20px;    
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.skills-content img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.skills-content h1{
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-content h2{
+    font-size: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skills-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+.skills-content li{
+    font-size: 32px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12% 8%;
+    gap: 10em;
+    color: white;
+    background-color: gray;
+    width: 200%;
+    height: 200px;
+}
+.contact-content{
+    margin: 20px 0;
+    padding: 20px;
+    background-color: gray;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.heading{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.contact-links ul{
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+.contact-links ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.contact-link{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.contact-link:hover{
+    color: orangered;
+}
+.fab,
+.far{
+    margin-right: 5px;
+}
+.contact-link img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.footer{
+    background: rgb(120, 120, 120);
+    backdrop-filter: blur(10px);
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 0;
+    width: 200%; 
+    height: 100px;
+}
+.social-icons{
+    list-style-type: none;
+    padding: 0;
+    color: white;
+}
+.social-icons h2{
+    font-size: 24px;
+}
+.social-icons li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.social-icons li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.social-icons li a img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.social-icon li a img:hover{
+    transform: scale(1.2);
+}
